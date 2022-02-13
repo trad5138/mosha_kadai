@@ -1,0 +1,44 @@
+/*ブレイクポイントを設定*/
+$sp: 501px;
+$tablet: 768px;
+$tablet-lg: 1079px;
+$pc: 1201px;
+$pc-md: 1261px;
+$pc-xl: 1281px;
+
+@mixin sp {
+    @media screen and (min-width: ($sp)) {
+        @content;        
+    }    
+}
+
+@mixin tablet {
+    @media screen and (min-width: ($tablet)) {
+        @content;        
+    }    
+}
+
+@mixin tablet-lg {
+    @media screen and (min-width: ($tablet-lg)) {
+        @content;        
+    }    
+}
+
+@mixin pc {
+    @media screen and (min-width: ($pc)) {
+        @content;        
+    }    
+}
+
+@mixin pc-md {
+    @media screen and (min-width: ($pc-md)) {
+        @content;        
+    }    
+}
+
+@mixin pc-xl {
+    @media screen and (min-width: ($pc-xl)) {
+        @content;        
+    }    
+}
+
